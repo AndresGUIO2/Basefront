@@ -146,5 +146,18 @@
     <button mat-raised-button color="primary" type="submit" [disabled]="!knnBForm.valid">Enviar</button>
     
   </form>
-  
+
+
+<p> {{ similar_patients$.length  }}  resultados </p>
+
+<div *ngIf="similar_patients$.length > 0"  >
+    <h2>
+        El nivel más usual es: {{ common_level}}
+        con un {{ common_percentage }}% de pacientes
+    </h2>
+</div>
+
+
+
+
 <app-patient-list [patients]="similar_patients$"></app-patient-list>

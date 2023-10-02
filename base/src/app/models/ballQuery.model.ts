@@ -4,9 +4,9 @@ import { PatientModel } from "./patient.model";
 export class BallQueryModel {
 
     new_point: number[];
-    r: number;
+    radius: number;
 
-    constructor(patient : PatientModel , r: number) {
+    constructor(patient : PatientModel , radius: number) {
         this.new_point = [
             patient.AirPollution,
             patient.AlcoholUse,
@@ -30,6 +30,6 @@ export class BallQueryModel {
             patient.DryCough,
             patient.Snoring,
           ];
-        this.r = r;
+        this.radius = radius;
     }
 }
