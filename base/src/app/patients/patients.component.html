@@ -1,0 +1,17 @@
+<app-patient-list *ngIf="advance" [patients] = "patients$"></app-patient-list>
+
+
+<mat-tab-group animationDuration="200ms" class="mb-5">
+
+    <mat-tab label="Buscar pacientes similares">
+
+        <app-knnquery></app-knnquery>
+        
+    </mat-tab>
+    <mat-tab label="Predicción de nivel de cancer">
+        
+        <app-ball-query></app-ball-query>
+
+    </mat-tab>
+</mat-tab-group>
+

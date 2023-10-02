@@ -1,0 +1,50 @@
+<div class="container" >
+    <div>
+        <mat-card>
+            <mat-card-header >
+                <div class="center">
+                    <mat-card-title>
+                        <h1 class="text-center">Predicción de pacientes</h1>
+                    </mat-card-title>
+                </div>
+            </mat-card-header>
+
+            <mat-card-content>
+                <div>
+                    <div>
+                        <h2>Instrucciones:</h2>
+                    </div>
+
+                    <div>
+                        <p>
+                        Se tiene un conjunto de 1000 datos de pacientes de cáncer de
+                        pulmón. Tras una sospecha inicial de cáncer de pulmón, se desea
+                        saber qué tan probable es que un nuevo paciente, en caso de tener
+                        cáncer de pulmón, este se encuentre en un grado que puede ser:
+                        </p>
+                    </div>
+
+                    <div fxFlex>
+                        <mat-list>
+                        <mat-list-item>Low: Leve</mat-list-item>
+                        <mat-list-item>Medium: medio</mat-list-item>
+                        <mat-list-item>High: grave</mat-list-item>
+                        </mat-list>
+                    </div>
+
+                    <div>
+                        <p>
+                        Para ello se cuenta con los datos de los pacientes y el grado de
+                        su cáncer. Estos datos incluyen datos básicos y otros que tienen
+                        que ver con síntomas y factores de riesgo.
+                        </p>
+                    </div>
+                </div>
+            </mat-card-content>
+
+            <mat-card-actions class="center">
+                <button mat-raised-button color="primary" (click)="onClick()" >Continuar</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

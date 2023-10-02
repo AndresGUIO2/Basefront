@@ -1,0 +1,149 @@
+<form [formGroup]="knnForm" (ngSubmit)="onSubmit()" class="container mt-4">
+    <mat-card-title>
+        <h1 class="text-center">Consulta de K vecinos cercanos</h1>
+    </mat-card-title>
+
+    <!-- Age -->
+    <mat-form-field appearance="fill">
+      <mat-label>Age</mat-label>
+      <input matInput id="Age" formControlName="Age" type="number" min="18" max="100">
+    </mat-form-field>
+
+    <!-- Air Pollution -->
+    <mat-form-field appearance="fill">
+      <mat-label>Air Pollution</mat-label>
+      <input matInput id="AirPollution" formControlName="AirPollution" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Alcohol Use -->
+    <mat-form-field appearance="fill">
+      <mat-label>Alcohol Use</mat-label>
+      <input matInput id="AlcoholUse" formControlName="AlcoholUse" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Dust Allergy -->
+    <mat-form-field appearance="fill">
+      <mat-label>Dust Allergy</mat-label>
+      <input matInput id="DustAllergy" formControlName="DustAllergy" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Occupational Hazards -->
+    <mat-form-field appearance="fill">
+      <mat-label>Occupational Hazards</mat-label>
+      <input matInput id="OccuPationalHazards" formControlName="OccuPationalHazards" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Genetic Risk -->
+    <mat-form-field appearance="fill">
+      <mat-label>Genetic Risk</mat-label>
+      <input matInput id="GeneticRisk" formControlName="GeneticRisk" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Chronic Lung Disease -->
+    <mat-form-field appearance="fill">
+      <mat-label>Chronic Lung Disease</mat-label>
+      <input matInput id="ChronicLungDisease" formControlName="ChronicLungDisease" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Balanced Diet -->
+    <mat-form-field appearance="fill">
+      <mat-label>Balanced Diet</mat-label>
+      <input matInput id="BalancedDiet" formControlName="BalancedDiet" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Obesity -->
+    <mat-form-field appearance="fill">
+      <mat-label>Obesity</mat-label>
+      <input matInput id="Obesity" formControlName="Obesity" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Smoking -->
+    <mat-form-field appearance="fill">
+      <mat-label>Smoking</mat-label>
+      <input matInput id="Smoking" formControlName="Smoking" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Passive Smoker -->
+    <mat-form-field appearance="fill">
+      <mat-label>Passive Smoker</mat-label>
+      <input matInput id="PassiveSmoker" formControlName="PassiveSmoker" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Chest Pain -->
+    <mat-form-field appearance="fill">
+      <mat-label>Chest Pain</mat-label>
+      <input matInput id="ChestPain" formControlName="ChestPain" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Coughing of Blood -->
+    <mat-form-field appearance="fill">
+      <mat-label>Coughing of Blood</mat-label>
+      <input matInput id="CoughingOfBlood" formControlName="CoughingOfBlood" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Fatigue -->
+    <mat-form-field appearance="fill">
+      <mat-label>Fatigue</mat-label>
+      <input matInput id="Fatigue" formControlName="Fatigue" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Weight Loss -->
+    <mat-form-field appearance="fill">
+      <mat-label>Weight Loss</mat-label>
+      <input matInput id="WeightLoss" formControlName="WeightLoss" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Shortness of Breath -->
+    <mat-form-field appearance="fill">
+      <mat-label>Shortness of Breath</mat-label>
+      <input matInput id="ShortnessOfBreath" formControlName="ShortnessOfBreath" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Wheezing -->
+    <mat-form-field appearance="fill">
+      <mat-label>Wheezing</mat-label>
+      <input matInput id="Wheezing" formControlName="Wheezing" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Swallowing Difficulty -->
+    <mat-form-field appearance="fill">
+      <mat-label>Swallowing Difficulty</mat-label>
+      <input matInput id="SwallowingDifficulty" formControlName="SwallowingDifficulty" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Clubbing of Finger Nails -->
+    <mat-form-field appearance="fill">
+      <mat-label>Clubbing of Finger Nails</mat-label>
+      <input matInput id="ClubbingofFingerNails" formControlName="ClubbingOfFingerNails" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Frequent Cold -->
+    <mat-form-field appearance="fill">
+      <mat-label>Frequent Cold</mat-label>
+      <input matInput id="FrequentCold" formControlName="FrequentCold" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Dry Cough -->
+    <mat-form-field appearance="fill">
+      <mat-label>Dry Cough</mat-label>
+      <input matInput id="DryCough" formControlName="DryCough" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- Snoring -->
+    <mat-form-field appearance="fill">
+      <mat-label>Snoring</mat-label>
+      <input matInput id="Snoring" formControlName="Snoring" type="number" min="1" max="9">
+    </mat-form-field>
+  
+    <!-- K -->
+    <mat-form-field appearance="fill">
+      <mat-label>K</mat-label>
+      <input matInput id="k" formControlName="k" type="number" min="1">
+    </mat-form-field>
+  
+    <!-- Submit Button -->
+    <button mat-raised-button color="primary" type="submit" [disabled]="!knnForm.valid">Enviar</button>
+    
+  </form>
+  
+<app-patient-list [patients]="similar_patients$"></app-patient-list>
