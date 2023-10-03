@@ -10,7 +10,7 @@ import { BallQueryModel } from '../models/ballQuery.model';
   providedIn: 'root',
 })
 export class ApiService {
-  private baseUrl = 'http://localhost:8000'; // Cambia esto a la URL donde se aloja tu API de FastAPI
+  private baseUrl = 'https://base-back-f67354303ae9.herokuapp.com'; 
 
   constructor(private http: HttpClient) {}
 
